@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solución Técnica | Proyecto Hidrovía</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+    <a href="index.html" class="logo-container">
+      <img src="assets/images/logo-proyecto.png" alt="Proyecto Hidrovía" class="logo-img" onerror="this.style.display='none'">
+    </a>
+
+    <!-- Botón Hamburguesa (visible solo en móvil/tablet) -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-container" id="nav-container">
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="solucion.html">Solución</a></li>
+        <li><a href="gestion.html">Gestión</a></li>
+        <li><a href="ejecucion.html">Ejecución</a></li>
+        <li><a href="operacion.html">Operación</a></li>
+      </ul>
+      <a href="https://nivelia-web.vercel.app/index.html" class="btn-corporate" target="_blank">← Volver a NIVELIA S.A.S.</a>
+    </nav>
+  </header>
+
+  <section class="hero" style="padding: 10rem 6% 4rem;">
+    <span class="badge badge-blue">06 al 14 · Solución e Ingeniería</span>
+    <h1 style="font-size: 2.8rem;">Solución Técnica <span>e Ingenierías del Sistema</span></h1>
+    <p class="subtitle">Descripción de la solución, subsistemas, requerimientos técnicos y todas las disciplinas de ingeniería involucradas.</p>
+  </section>
+
+  <!-- 6. DESCRIPCIÓN DE LA SOLUCIÓN -->
+  <section>
+    <div class="section-header">
+      <span class="badge badge-blue">06 · Descripción</span>
+      <h2>Descripción de la Solución</h2>
+      <p>La plataforma se concibe como un sistema modular que permanece integrado al cruce peatonal durante la condición normal y cambia de configuración cuando el nivel de agua alcanza el umbral definido. El accionamiento puede ser automático, semiautomático o manual de emergencia.</p>
+    </div>
+
+    <h3 style="color: var(--primary-cyan); margin-bottom: 1.5rem;">Subsistemas del Sistema</h3>
+    <div class="grid-cards">
+      <div class="card"><h4>🏗️ Estructura Portante</h4><p>Transmitir cargas al apoyo y conservar estabilidad.</p></div>
+      <div class="card"><h4>🚶 Superficie Peatonal</h4><p>Proporcionar una ruta continua, antideslizante y accesible.</p></div>
+      <div class="card"><h4>⚙️ Mecanismo</h4><p>Permitir elevación, giro, extensión o despliegue controlado.</p></div>
+      <div class="card"><h4>📡 Sensores</h4><p>Detectar nivel de agua y condiciones de operación.</p></div>
+      <div class="card"><h4>🎛️ Control</h4><p>Procesar señales y ordenar la actuación del sistema.</p></div>
+      <div class="card"><h4>⚡ Alimentación</h4><p>Suministrar energía al sistema y respaldo cuando corresponda.</p></div>
+      <div class="card"><h4>🛡️ Seguridad</h4><p>Evitar atrapamientos, movimientos inesperados y acceso a partes móviles.</p></div>
+      <div class="card"><h4>🚦 Señalización</h4><p>Informar estado normal, activación, restricción y emergencia.</p></div>
+    </div>
+  </section>
+
+  <!-- 6.1 Secuencia Funcional -->
+  <section>
+    <div class="section-header">
+      <span class="badge badge-blue">6.1 · Secuencia Funcional</span>
+      <h2>Ciclo de Operación del Sistema</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <h4>1. Condición Normal</h4>
+        <p>Plataforma asegurada y superficie de tránsito integrada al cruce.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>2. Detección</h4>
+        <p>Sensor o inspección identifica acumulación por encima del umbral.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>3. Validación</h4>
+        <p>El controlador verifica que las condiciones sean aptas para activar.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>4. Advertencia</h4>
+        <p>Señal luminosa/sonora informa el cambio de condición.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>5. Despliegue</h4>
+        <p>Mecanismo lleva la plataforma a la posición operativa.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>6. Bloqueo</h4>
+        <p>Se verifica posición final y estabilidad.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>7. Operación</h4>
+        <p>Se habilita el tránsito peatonal.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>8. Retorno</h4>
+        <p>Cuando el nivel desciende, se ejecuta la secuencia de repliegue previa verificación.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>9. Emergencia</h4>
+        <p>Ante falla, se dispone de procedimiento de bloqueo y operación manual.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. LOCALIZACIÓN Y USUARIOS -->
+  <section>
+    <div class="section-header">
+      <span class="badge badge-blue">07 · Localización y Usuarios</span>
+      <h2>Ubicación y Beneficiarios</h2>
+      <p>La ubicación de referencia del proyecto es el sector de la <strong>Calle 170 con Carrera 7, Bogotá D.C.</strong>, utilizado como punto de estudio para una solución de movilidad peatonal frente a acumulación de agua. La localización definitiva deberá confirmarse mediante visita, levantamiento topográfico, identificación de redes y verificación de interferencias.</p>
+    </div>
+
+    <h3 style="color: var(--primary-cyan); margin-bottom: 1.5rem;">7.1 Usuarios del Sistema</h3>
+    <div class="table-responsive">
+      <table>
+        <thead><tr><th>Usuario</th><th>Necesidad</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Peatón general</strong></td><td>Cruce continuo y seguro.</td></tr>
+          <tr><td><strong>Persona con movilidad reducida</strong></td><td>Pendientes, anchos y superficie compatibles con accesibilidad.</td></tr>
+          <tr><td><strong>Adulto mayor</strong></td><td>Superficie estable y antideslizante.</td></tr>
+          <tr><td><strong>Ciclista que desmonta</strong></td><td>Cruce seguro y señalizado.</td></tr>
+          <tr><td><strong>Comercio y residentes</strong></td><td>Continuidad de acceso durante eventos.</td></tr>
+          <tr><td><strong>Operador/mantenimiento</strong></td><td>Acceso controlado a mecanismos y tablero.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 8. REQUERIMIENTOS TÉCNICOS -->
+  <section>
+    <div class="section-header">
+      <span class="badge badge-blue">08 · Requerimientos</span>
+      <h2>Requerimientos Técnicos</h2>
+    </div>
+
+    <div class="table-responsive">
+      <table>
+        <thead><tr><th>Código</th><th>Requerimiento</th><th>Criterio de Verificación</th></tr></thead>
+        <tbody>
+          <tr><td><span class="badge badge-blue">RT-01</span></td><td>Continuidad del recorrido</td><td>Sin discontinuidades peligrosas en posición operativa.</td></tr>
+          <tr><td><span class="badge badge-blue">RT-02</span></td><td>Capacidad estructural</td><td>Verificación mediante memoria de cálculo.</td></tr>
+          <tr><td><span class="badge badge-blue">RT-03</span></td><td>Superficie antideslizante</td><td>Ensayo o especificación del fabricante.</td></tr>
+          <tr><td><span class="badge badge-blue">RT-04</span></td><td>Control de movimiento</td><td>Arranque/parada controlada y bloqueo final.</td></tr>
+          <tr><td><span class="badge badge-blue">RT-05</span></td><td>Emergencia</td><td>Modo manual o seguro ante pérdida de energía.</td></tr>
+          <tr><td><span class="badge badge-blue">RT-06</span></td><td>Detección</td><td>Lectura redundante o lógica de validación cuando aplique.</td></tr>
+          <tr><td><span class="badge badge-blue">RT-07</span></td><td>Protección</td><td>Partes móviles protegidas frente a atrapamiento.</td></tr>
+          <tr><td><span class="badge badge-blue">RT-08</span></td><td>Mantenimiento</td><td>Acceso seguro y componentes reemplazables.</td></tr>
+          <tr><td><span class="badge badge-blue">RT-09</span></td><td>Durabilidad</td><td>Protección contra corrosión y exposición ambiental.</td></tr>
+          <tr><td><span class="badge badge-blue">RT-10</span></td><td>Documentación</td><td>Planos, manuales, protocolos y registros de prueba.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 9-13. INGENIERÍAS (Tabs) -->
+  <section>
+    <div class="section-header">
+      <span class="badge badge-blue">09 al 13 · Ingenierías</span>
+      <h2>Disciplinas de Ingeniería</h2>
+    </div>
+
+    <div class="tabs-container">
+      <div class="tabs-header">
+        <button class="tab-btn active" data-tab="civil">🏗️ Civil y Estructural</button>
+        <button class="tab-btn" data-tab="mecanica">⚙️ Mecánica</button>
+        <button class="tab-btn" data-tab="electrica">⚡ Eléctrica y Control</button>
+        <button class="tab-btn" data-tab="drenaje">💧 Drenaje</button>
+        <button class="tab-btn" data-tab="materiales">🔩 Materiales</button>
+      </div>
+
+      <!-- CIVIL -->
+      <div id="civil" class="tab-content active">
+        <h3 style="color: var(--primary-cyan); margin-bottom: 1rem;">9. Ingeniería Civil y Estructural</h3>
+        <h4 style="margin: 1.5rem 0 0.8rem; color: var(--primary-sky);">9.1 Estudios Previos</h4>
+        <ul class="list-check" style="margin-bottom: 1.5rem;">
+          <li>Levantamiento topográfico de andenes, calzada, bordillos y puntos de conexión.</li>
+          <li>Inventario de redes existentes y elementos de urbanismo.</li>
+          <li>Caracterización de niveles y rutas de escorrentía.</li>
+          <li>Verificación de condición de pavimentos y apoyos.</li>
+          <li>Determinación de cotas de operación y altura máxima requerida.</li>
+          <li>Evaluación de accesibilidad y continuidad geométrica.</li>
+        </ul>
+
+        <h4 style="margin: 1.5rem 0 0.8rem; color: var(--primary-sky);">9.2 Criterios Estructurales</h4>
+        <p style="color: var(--text-muted); margin-bottom: 1rem;">La estructura deberá diseñarse con base en cargas de uso, peso propio, acciones accidentales, efectos dinámicos derivados del mecanismo y condiciones ambientales. La memoria definitiva deberá definir secciones, uniones, anclajes, soldaduras/pernos, recubrimientos o protección anticorrosiva y condiciones de apoyo.</p>
+
+        <div class="table-responsive">
+          <table>
+            <thead><tr><th>Elemento</th><th>Criterio Preliminar</th></tr></thead>
+            <tbody>
+              <tr><td>Bastidor principal</td><td>Perfil metálico estructural o sistema equivalente calculado.</td></tr>
+              <tr><td>Vigas secundarias</td><td>Distribución uniforme de carga hacia el bastidor.</td></tr>
+              <tr><td>Superficie</td><td>Panel modular de alta resistencia y acabado antideslizante.</td></tr>
+              <tr><td>Anclajes</td><td>Diseñados según soporte real y cargas transmitidas.</td></tr>
+              <tr><td>Barandas/protecciones</td><td>Cuando la geometría y altura libre lo requieran.</td></tr>
+              <tr><td>Juntas</td><td>Permitir movimiento y evitar puntos de tropiezo.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4 style="margin: 1.5rem 0 0.8rem; color: var(--primary-sky);">9.3 Entregables Estructurales</h4>
+        <ul class="list-check list-arrow">
+          <li>Memoria de cálculo.</li>
+          <li>Planos de planta, cortes y detalles.</li>
+          <li>Cuadro de perfiles y materiales.</li>
+          <li>Detalles de anclaje.</li>
+          <li>Especificaciones de fabricación.</li>
+          <li>Plan de inspección de uniones.</li>
+        </ul>
+      </div>
+
+      <!-- MECÁNICA -->
+      <div id="mecanica" class="tab-content">
+        <h3 style="color: var(--primary-cyan); margin-bottom: 1rem;">10. Ingeniería Mecánica y Automatización</h3>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">El sistema mecánico debe convertir la orden de control en un movimiento seguro y repetible. La selección del mecanismo dependerá de la masa de la plataforma, geometría, recorrido, frecuencia de operación y disponibilidad energética.</p>
+
+        <div class="table-responsive">
+          <table>
+            <thead><tr><th>Componente</th><th>Función</th><th>Criterio</th></tr></thead>
+            <tbody>
+              <tr><td>Actuador</td><td>Generar movimiento</td><td>Capacidad superior a la demanda calculada con factor de seguridad.</td></tr>
+              <tr><td>Brazos/bielas</td><td>Transmitir movimiento</td><td>Sin interferencias durante todo el recorrido.</td></tr>
+              <tr><td>Ejes/pasadores</td><td>Articular componentes</td><td>Verificación de corte, flexión y desgaste.</td></tr>
+              <tr><td>Topes</td><td>Limitar recorrido</td><td>Evitar sobrecarrera.</td></tr>
+              <tr><td>Bloqueo</td><td>Mantener posición</td><td>Resistir carga sin depender exclusivamente del motor.</td></tr>
+              <tr><td>Protecciones</td><td>Evitar atrapamiento</td><td>Cubrir zonas móviles accesibles.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4 style="margin: 1.5rem 0 0.8rem; color: var(--primary-sky);">10.1 Automatización</h4>
+        <ul class="list-check">
+          <li>Sensor primario de nivel de agua.</li>
+          <li>Sensor secundario o lógica de confirmación.</li>
+          <li>Finales de carrera de posición retraída y desplegada.</li>
+          <li>Controlador lógico o unidad de control.</li>
+          <li>Indicadores de estado.</li>
+          <li>Parada de emergencia.</li>
+          <li>Modo manual de recuperación.</li>
+          <li>Registro de eventos de activación y fallas.</li>
+        </ul>
+      </div>
+
+      <!-- ELÉCTRICA -->
+      <div id="electrica" class="tab-content">
+        <h3 style="color: var(--primary-cyan); margin-bottom: 1rem;">11. Sistema Eléctrico y de Control</h3>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">La alimentación y control deben diseñarse de acuerdo con las condiciones reales del punto. Se debe prever protección eléctrica, puesta a tierra, envolventes adecuadas al ambiente y una estrategia de respaldo cuando la seguridad dependa del accionamiento.</p>
+
+        <div class="card mb-4">
+          <h4>Componentes de Referencia</h4>
+          <p>Tablero, protecciones, cableado y fuente de control.</p>
+        </div>
+
+        <h4 style="margin: 1.5rem 0 0.8rem; color: var(--primary-sky);">11.1 Filosofía de Control</h4>
+        <div class="info-box warning">
+          <strong>⚠️ Estado Seguro ante Fallas:</strong> Ante una condición de falla, el sistema debe pasar a un estado seguro. La lógica deberá impedir movimientos si existen señales contradictorias, puertas de mantenimiento abiertas, obstáculo detectado o ausencia de confirmación de posición.
+        </div>
+      </div>
+
+      <!-- DRENAJE -->
+      <div id="drenaje" class="tab-content">
+        <h3 style="color: var(--primary-cyan); margin-bottom: 1rem;">12. Drenaje y Manejo del Agua</h3>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">La plataforma debe integrarse al comportamiento hidráulico del sitio sin obstruir sumideros, cunetas o rutas de escorrentía. Antes de definir cotas y apoyos se deberá identificar el sistema de drenaje existente.</p>
+
+        <div class="table-responsive">
+          <table>
+            <thead><tr><th>Actividad</th><th>Producto</th></tr></thead>
+            <tbody>
+              <tr><td>Identificación de puntos bajos</td><td>Plano de cotas y puntos de acumulación.</td></tr>
+              <tr><td>Inventario de sumideros</td><td>Localización y condición.</td></tr>
+              <tr><td>Revisión de pendientes</td><td>Perfil y sentido del escurrimiento.</td></tr>
+              <tr><td>Verificación de obstrucciones</td><td>Listado de interferencias.</td></tr>
+              <tr><td>Definición de drenaje local</td><td>Detalles de paso y evacuación.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="info-box">
+          <strong>💧 Premisa de Diseño:</strong> El proyecto no debe crear barreras que concentren agua hacia zonas peatonales o edificaciones. Los elementos desmontables y registros deberán permitir limpieza y mantenimiento del drenaje.
+        </div>
+      </div>
+
+      <!-- MATERIALES -->
+      <div id="materiales" class="tab-content">
+        <h3 style="color: var(--primary-cyan); margin-bottom: 1rem;">13. Materiales y Especificaciones</h3>
+
+        <div class="table-responsive">
+          <table>
+            <thead><tr><th>Elemento</th><th>Material/Solución de Referencia</th><th>Control</th></tr></thead>
+            <tbody>
+              <tr><td>Estructura</td><td>Acero estructural protegido contra corrosión</td><td>Certificados y control dimensional.</td></tr>
+              <tr><td>Superficie</td><td>Panel metálico, compuesto o equivalente antideslizante</td><td>Resistencia, acabado y drenaje superficial.</td></tr>
+              <tr><td>Tornillería</td><td>Alta resistencia donde el cálculo lo requiera</td><td>Calidad y torque.</td></tr>
+              <tr><td>Ejes/pasadores</td><td>Acero mecanizado con protección</td><td>Diámetro, ajuste y lubricación.</td></tr>
+              <tr><td>Sellos</td><td>Elastómero compatible con ambiente</td><td>Continuidad y desgaste.</td></tr>
+              <tr><td>Gabinete</td><td>Envolvente para ambiente exterior</td><td>Grado de protección según diseño.</td></tr>
+              <tr><td>Señalización</td><td>Elementos reflectivos/luminosos</td><td>Visibilidad y estado.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="info-box">
+          <strong>📋 Nota:</strong> Las especificaciones definitivas deben establecer marca o equivalencia, propiedades mecánicas, tolerancias, acabados, procedimientos de montaje y criterios de aceptación.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. PROCESO CONSTRUCTIVO -->
+  <section>
+    <div class="section-header">
+      <span class="badge badge-blue">14 · Proceso Constructivo</span>
+      <h2>Instalación Paso a Paso</h2>
+    </div>
+
+    <div class="table-responsive">
+      <table>
+        <thead><tr><th>Código</th><th>Actividad</th><th>Descripción</th></tr></thead>
+        <tbody>
+          <tr><td><span class="badge badge-blue">14.1</span></td><td><strong>Replanteo</strong></td><td>Verificar ejes, cotas, interferencias y niveles.</td></tr>
+          <tr><td><span class="badge badge-blue">14.2</span></td><td><strong>Adecuación</strong></td><td>Retiro controlado de elementos que interfieran y preparación de apoyos.</td></tr>
+          <tr><td><span class="badge badge-blue">14.3</span></td><td><strong>Cimentación/anclajes</strong></td><td>Ejecutar apoyos o anclajes conforme a planos y memoria.</td></tr>
+          <tr><td><span class="badge badge-blue">14.4</span></td><td><strong>Fabricación</strong></td><td>Corte, mecanizado, armado, soldadura y protección superficial.</td></tr>
+          <tr><td><span class="badge badge-blue">14.5</span></td><td><strong>Preensamble</strong></td><td>Verificar funcionamiento del conjunto antes del traslado.</td></tr>
+          <tr><td><span class="badge badge-blue">14.6</span></td><td><strong>Montaje</strong></td><td>Instalar bastidores, mecanismo, superficie y protecciones.</td></tr>
+          <tr><td><span class="badge badge-blue">14.7</span></td><td><strong>Instalación eléctrica</strong></td><td>Montar tablero, sensores, actuadores y cableado.</td></tr>
+          <tr><td><span class="badge badge-blue">14.8</span></td><td><strong>Programación</strong></td><td>Configurar lógica, límites, alarmas y modos de operación.</td></tr>
+          <tr><td><span class="badge badge-blue">14.9</span></td><td><strong>Pruebas</strong></td><td>Realizar pruebas mecánicas, eléctricas, funcionales y de seguridad.</td></tr>
+          <tr><td><span class="badge badge-blue">14.10</span></td><td><strong>Entrega</strong></td><td>Capacitar operador, entregar planos, manuales y actas.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-text">&copy; 2026 Proyecto HIDROVÍA · NIVELIA S.A.S. · Bogotá D.C., Colombia</div>
+      <a href="https://nivelia-web.vercel.app/index.html" class="btn-corporate" target="_blank">Sitio Corporativo NIVELIA →</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
