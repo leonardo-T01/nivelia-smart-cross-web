@@ -9,20 +9,28 @@
 </head>
 <body>
 
-  <header class="navbar">
+    <header class="navbar">
     <a href="index.html" class="logo-container">
       <img src="assets/images/logo-proyecto.png" alt="Proyecto Hidrovía" class="logo-img" onerror="this.style.display='none'">
     </a>
-    <nav>
+
+    <!-- Botón Hamburguesa (visible solo en móvil/tablet) -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-container" id="nav-container">
       <ul class="nav-links">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="solucion.html">Solución</a></li>
         <li><a href="gestion.html">Gestión</a></li>
         <li><a href="ejecucion.html">Ejecución</a></li>
-        <li><a href="operacion.html" class="active">Operación</a></li>
+        <li><a href="operacion.html">Operación</a></li>
       </ul>
+      <a href="https://nivelia-web-testing.vercel.app/index.html" class="btn-corporate" target="_blank">← Volver a NIVELIA S.A.S.</a>
     </nav>
-    <a href="https://nivelia-web-testing.vercel.app/index.html" class="btn-corporate" target="_blank">← Volver a NIVELIA S.A.S.</a>
   </header>
 
   <section class="hero" style="padding: 10rem 6% 4rem;">
