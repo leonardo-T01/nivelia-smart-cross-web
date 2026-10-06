@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión del Proyecto | Proyecto Hidrovía</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo-container">
+      <img src="assets/images/logo-proyecto.png" alt="Proyecto Hidrovía" class="logo-img" onerror="this.style.display='none'">
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="solucion.html">Solución</a></li>
+        <li><a href="gestion.html" class="active">Gestión</a></li>
+        <li><a href="ejecucion.html">Ejecución</a></li>
+        <li><a href="operacion.html">Operación</a></li>
+      </ul>
+    </nav>
+    <a href="https://nivelia.com" class="btn-corporate" target="_blank">← Volver a NIVELIA S.A.S.</a>
+  </header>
+
+  <section class="hero" style="padding: 10rem 6% 4rem;">
+    <span class="badge badge-blue">15 al 22 · Gestión y Organización</span>
+    <h1 style="font-size: 2.8rem;">Gestión del Proyecto <span>WBS, Procesos, Equipo y RACI</span></h1>
+    <p class="subtitle">Estructura organizacional, perfiles profesionales, matriz de responsabilidades y reglas operativas del proyecto.</p>
+  </section>
+
+  <!-- 15. WBS / EDT -->
+  <section>
+    <div class="section-header">
+      <span class="badge badge-blue">15 · WBS / EDT</span>
+      <h2>Estructura de Desglose del Trabajo</h2>
+      <p>Haz clic en cada paquete de trabajo para expandir sus actividades.</p>
+    </div>
+
+      <!-- 15. WBS / EDT -->
+    <section>
+        <div class="section-header">
+        <span class="badge badge-blue">15 · WBS / EDT</span>
+        <h2>Estructura de Desglose del Trabajo</h2>
+        <p>Haz clic en cada paquete de trabajo para expandir sus actividades.</p>
+        <p id="wbs-counter" style="color: var(--primary-cyan); font-weight: 700; margin-top: 0.8rem;"></p>
+        </div>
+
+        <div class="wbs-container" id="wbs-container">
+        <!-- Los paquetes de trabajo se cargan dinámicamente desde wbs-data.js -->
+        </div>
+    </section>
+  </section>
+
+  <!-- 16. PROCESOS DEL PROYECTO -->
+  <section>
+    <div class="section-header">
+      <span class="badge badge-blue">16 · Procesos</span>
+      <h2>Procesos del Proyecto</h2>
+      <p>Cada proceso se define mediante objetivo, entradas, salidas, responsable e indicador.</p>
+    </div>
+
+    <div class="table-responsive">
+      <table>
+        <thead>
+          <tr><th>Código</th><th>Proceso</th><th>Objetivo</th><th>Responsable</th><th>Indicador</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><span class="badge badge-navy">PG-01</span></td><td><strong>Dirección y control</strong></td><td>Definir alcance, aprobar decisiones y controlar desempeño.</td><td>Director de proyecto</td><td>Cumplimiento de hitos ≥ 90%</td></tr>
+          <tr><td><span class="badge badge-navy">PG-02</span></td><td><strong>Gestión documental</strong></td><td>Controlar versiones, planos y registros.</td><td>Control documental</td><td>Documentos vigentes = 100%</td></tr>
+          <tr><td><span class="badge badge-navy">PG-03</span></td><td><strong>Gestión de cambios</strong></td><td>Evaluar impacto de modificaciones.</td><td>Director de proyecto</td><td>Cambios sin trazabilidad = 0</td></tr>
+          <tr><td><span class="badge badge-blue">ES-01</span></td><td><strong>Levantamiento topográfico</strong></td><td>Obtener geometría y cotas del sitio.</td><td>Ingeniero civil</td><td>Puntos verificados ≥ 95%</td></tr>
+          <tr><td><span class="badge badge-blue">ES-02</span></td><td><strong>Diagnóstico hidráulico</strong></td><td>Identificar acumulación y rutas de escorrentía.</td><td>Ingeniero hidráulico</td><td>Puntos críticos identificados = 100%</td></tr>
+          <tr><td><span class="badge badge-blue">ES-03</span></td><td><strong>Diagnóstico de movilidad</strong></td><td>Evaluar continuidad y accesibilidad.</td><td>Ingeniero civil</td><td>Interferencias registradas = 100%</td></tr>
+          <tr><td><span class="badge badge-blue">DI-01</span></td><td><strong>Diseño estructural</strong></td><td>Definir estructura y apoyos.</td><td>Ingeniero estructural</td><td>Revisiones sin NC críticas</td></tr>
+          <tr><td><span class="badge badge-blue">DI-02</span></td><td><strong>Diseño mecánico</strong></td><td>Definir mecanismo y componentes móviles.</td><td>Ingeniero mecánico</td><td>Ciclos de prueba = 100%</td></tr>
+          <tr><td><span class="badge badge-blue">DI-03</span></td><td><strong>Diseño eléctrico</strong></td><td>Definir alimentación y protecciones.</td><td>Ingeniero eléctrico</td><td>Pruebas eléctricas = 100%</td></tr>
+          <tr><td><span class="badge badge-blue">DI-04</span></td><td><strong>Automatización</strong></td><td>Definir lógica, sensores y seguridad.</td><td>Ing. de automatización</td><td>Alarmas críticas = 100%</td></tr>
+          <tr><td><span class="badge badge-orange">AB-01</span></td><td><strong>Compras técnicas</strong></td><td>Adquirir componentes conforme a especificaciones.</td><td>Compras</td><td>Compras conformes ≥ 95%</td></tr>
+          <tr><td><span class="badge badge-orange">FA-01</span></td><td><strong>Fabricación estructural</strong></td><td>Construir bastidor y componentes.</td><td>Jefe de producción</td><td>Rechazos ≤ 5%</td></tr>
+          <tr><td><span class="badge badge-orange">FA-02</span></td><td><strong>Integración mecánica</strong></td><td>Ensamblar mecanismo.</td><td>Ingeniero mecánico</td><td>Pruebas funcionales = 100%</td></tr>
+          <tr><td><span class="badge badge-orange">IN-01</span></td><td><strong>Adecuación del sitio</strong></td><td>Preparar zona de instalación.</td><td>Residente</td><td>Hitos ≥ 90%</td></tr>
+          <tr><td><span class="badge badge-orange">IN-02</span></td><td><strong>Montaje</strong></td><td>Instalar plataforma y componentes.</td><td>Residente</td><td>NC críticas = 0</td></tr>
+          <tr><td><span class="badge badge-orange">IN-03</span></td><td><strong>Instalación eléctrica</strong></td><td>Instalar tablero, sensores y cableado.</td><td>Ingeniero eléctrico</td><td>Pruebas = 100%</td></tr>
+          <tr><td><span class="badge badge-green">PU-01</span></td><td><strong>Pruebas funcionales</strong></td><td>Verificar secuencias de operación.</td><td>Director de pruebas</td><td>Pruebas ≥ 95%</td></tr>
+          <tr><td><span class="badge badge-green">PU-02</span></td><td><strong>Puesta en servicio</strong></td><td>Autorizar operación controlada.</td><td>Director de proyecto</td><td>Pendientes críticos = 0</td></tr>
+          <tr><td><span class="badge badge-green">OM-01</span></td><td><strong>Mantenimiento preventivo</strong></td><td>Evitar fallas por desgaste.</td><td>Coord. mantenimiento</td><td>Cumplimiento ≥ 95%</td></tr>
+          <tr><td><span class="badge badge-green">OM-02</span></td><td><strong>Atención de fallas</strong></td><td>Restablecer operación.</td><td>Mantenimiento</td><td>Tiempo de respuesta según SLA</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 17. ORGANIZACIÓN Y ORGANIGRAMA -->
+  <section>
+    <div class="section-header">
+      <span class="badge badge-blue">17 · Organización</span>
+      <h2>Estructura Organizacional del Proyecto</h2>
+      <p>La estructura organizacional se establece para el proyecto y no como una empresa independiente.</p>
+    </div>
+
+    <div class="card card-highlight mb-4">
+      <h4>17.1 Estructura Jerárquica</h4>
+      <p style="margin-top: 0.8rem; font-family: 'Courier New', monospace; font-size: 0.85rem; line-height: 1.8;">
+        PATROCINADOR / COMITÉ DEL PROYECTO<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+        DIRECTOR DEL PROYECTO<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+        COORDINACIÓN DE INGENIERÍA / RESIDENCIA / AUTOMATIZACIÓN / COSTOS-COMPRAS / SST-CALIDAD<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+        ESPECIALISTAS Y PERSONAL OPERATIVO
+      </p>
+    </div>
+
+    <div class="table-responsive">
+      <table>
+        <thead><tr><th>Nivel</th><th>Rol</th><th>Reporta a</th></tr></thead>
+        <tbody>
+          <tr><td><span class="badge badge-navy">1</span></td><td>Director del proyecto</td><td>Patrocinador / comité del proyecto</td></tr>
+          <tr><td><span class="badge badge-blue">2</span></td><td>Coordinador de ingeniería</td><td>Director del proyecto</td></tr>
+          <tr><td><span class="badge badge-blue">2</span></td><td>Residente de obra</td><td>Director del proyecto</td></tr>
+          <tr><td><span class="badge badge-blue">2</span></td><td>Coordinador de automatización</td><td>Director del proyecto</td></tr>
+          <tr><td><span class="badge badge-blue">2</span></td><td>Coordinador de compras y costos</td><td>Director del proyecto</td></tr>
+          <tr><td><span class="badge badge-blue">2</span></td><td>Coordinador SST y ambiental</td><td>Director del proyecto</td></tr>
+          <tr><td><span class="badge badge-navy">3</span></td><td>Ingeniero civil / estructural</td><td>Coordinador de ingeniería</td></tr>
+          <tr><td><span class="badge badge-navy">3</span></td><td>Ingeniero hidráulico</td><td>Coordinador de ingeniería</td></tr>
+          <tr><td><span class="badge badge-navy">3</span></td><td>Ingeniero mecánico</td><td>Coordinador de ingeniería</td></tr>
+          <tr><td><span class="badge badge-navy">3</span></td><td>Ingeniero eléctrico</td><td>Coordinador de automatización</td></tr>
+          <tr><td><span class="badge badge-navy">3</span></td><td>Ingeniero de control</td><td>Coordinador de automatización</td></tr>
+          <tr><td><span class="badge badge-navy">3</span></td><td>Topógrafo</td><td>Coordinador de ingeniería</td></tr>
+          <tr><td><span class="badge badge-navy">3</span></td><td>Inspector de calidad</td><td>Director del proyecto</td></tr>
+          <tr><td><span class="badge badge-navy">3</span></td><td>Maestro / supervisor de montaje</td><td>Residente de obra</td></tr>
+          <tr><td><span class="badge badge-blue">4</span></td><td>Personal técnico y operativo</td><td>Supervisor correspondiente</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 18. PERFILES Y RESPONSABILIDADES -->
+  <section>
+    <div class="section-header">
+      <span class="badge badge-blue">18 · Perfiles</span>
+      <h2>Perfiles y Responsabilidades del Equipo</h2>
+    </div>
+
+    <div class="grid-cards">
+      <div class="card card-highlight">
+        <span class="badge badge-blue">DP · Director del Proyecto</span>
+        <h3 style="margin-top: 0.8rem;">Dirección General</h3>
+        <p><strong>Objetivo:</strong> Planificar, dirigir, integrar y controlar el proyecto.</p>
+        <p style="margin-top: 0.5rem;"><strong>Formación:</strong> Ingeniería + formación en proyectos · <strong>Experiencia:</strong> 5 años (3 en proyectos)</p>
+        <p style="margin-top: 0.5rem;"><strong>Competencias:</strong> Liderazgo, negociación, control de costos.</p>
+        <p style="margin-top: 0.5rem;"><strong>Funciones:</strong> Aprobar planes; dirigir comités; controlar alcance; gestionar riesgos; aprobar cambios; coordinar cierre.</p>
+      </div>
+
+      <div class="card">
+        <span class="badge badge-blue">CI · Coordinador de Ingeniería</span>
+        <h3 style="margin-top: 0.8rem;">Integración Técnica</h3>
+        <p><strong>Objetivo:</strong> Integrar diseños civiles, estructurales, hidráulicos y de interfaces.</p>
+        <p style="margin-top: 0.5rem;"><strong>Formación:</strong> Ingeniería Civil · <strong>Experiencia:</strong> 4 años</p>
+        <p style="margin-top: 0.5rem;"><strong>Funciones:</strong> Revisar diseños; controlar interferencias; coordinar memorias; gestionar RFIs; aprobar técnicamente entregables.</p>
+      </div>
+
+      <div class="card">
+        <span class="badge badge-blue">RE · Residente de Obra</span>
+        <h3 style="margin-top: 0.8rem;">Ejecución en Campo</h3>
+        <p><strong>Objetivo:</strong> Dirigir ejecución y montaje en campo.</p>
+        <p style="margin-top: 0.5rem;"><strong>Formación:</strong> Ingeniería Civil · <strong>Experiencia:</strong> 3 años</p>
+        <p style="margin-top: 0.5rem;"><strong>Funciones:</strong> Coordinar frentes; controlar cantidades; verificar planos; gestionar actas; controlar calidad de instalación.</p>
+      </div>
+
+      <div class="card">
+        <span class="badge badge-blue">IA · Ing. de Automatización</span>
+        <h3 style="margin-top: 0.8rem;">Control y Seguridad</h3>
+        <p><strong>Objetivo:</strong> Diseñar y validar lógica de control y seguridad.</p>
+        <p style="margin-top: 0.5rem;"><strong>Formación:</strong> Ing. Electrónica/Automatización · <strong>Experiencia:</strong> 3 años</p>
+        <p style="margin-top: 0.5rem;"><strong>Funciones:</strong> Definir arquitectura; programar controlador; configurar sensores; probar alarmas; documentar software.</p>
+      </div>
+
+      <div class="card">
+        <span class="badge badge-blue">IM · Ingeniero Mecánico</span>
+        <h3 style="margin-top: 0.8rem;">Mecanismos</h3>
+        <p><strong>Objetivo:</strong> Diseñar mecanismo, accionamiento y elementos móviles.</p>
+        <p style="margin-top: 0.5rem;"><strong>Formación:</strong> Ingeniería Mecánica · <strong>Experiencia:</strong> 3 años</p>
+        <p style="margin-top: 0.5rem;"><strong>Funciones:</strong> Calcular mecanismo; seleccionar actuador; definir tolerancias; revisar montaje; elaborar manual mecánico.</p>
+      </div>
+
+      <div class="card">
+        <span class="badge badge-blue">IE · Ingeniero Eléctrico</span>
+        <h3 style="margin-top: 0.8rem;">Alimentación y Protecciones</h3>
+        <p><strong>Objetivo:</strong> Diseñar alimentación, protecciones y distribución.</p>
+        <p style="margin-top: 0.5rem;"><strong>Formación:</strong> Ingeniería Eléctrica · <strong>Experiencia:</strong> 3 años</p>
+        <p style="margin-top: 0.5rem;"><strong>Funciones:</strong> Diagramas; cargas; protecciones; puesta a tierra; pruebas; documentación.</p>
+      </div>
+
+      <div class="card">
+        <span class="badge badge-blue">IH · Ingeniero Hidráulico</span>
+        <h3 style="margin-top: 0.8rem;">Análisis Hídrico</h3>
+        <p><strong>Objetivo:</strong> Analizar acumulación y compatibilidad con drenaje.</p>
+        <p style="margin-top: 0.5rem;"><strong>Formación:</strong> Ing. Civil/Hidráulica · <strong>Experiencia:</strong> 3 años</p>
+        <p style="margin-top: 0.5rem;"><strong>Funciones:</strong> Diagnóstico; cotas; escorrentía; revisión de sumideros; recomendaciones.</p>
+      </div>
+
+      <div class="card">
+        <span class="badge badge-blue">IC · Ing. Civil/Estructural</span>
+        <h3 style="margin-top: 0.8rem;">Diseño Estructural</h3>
+        <p><strong>Objetivo:</strong> Diseñar estructura, apoyos y anclajes.</p>
+        <p style="margin-top: 0.5rem;"><strong>Formación:</strong> Ing. Civil + énfasis estructural · <strong>Experiencia:</strong> 3 años</p>
+        <p style="margin-top: 0.5rem;"><strong>Funciones:</strong> Cargas; análisis; conexiones; planos; revisión de fabricación.</p>
+      </div>
+
+      <div class="card">
+        <span class="badge badge-blue">TO · Topógrafo</span>
+        <h3 style="margin-top: 0.8rem;">Geometría y Cotas</h3>
+        <p><strong>Objetivo:</strong> Levantar y replantear geometría.</p>
+        <p style="margin-top: 0.5rem;"><strong>Formación:</strong> Tecnólogo/Profesional en Topografía · <strong>Experiencia:</strong> 2 años</p>
+        <p style="margin-top: 0.5rem;"><strong>Funciones:</strong> Levantamiento; puntos de control; replanteo; as-built; informes.</p>
+      </div>
+
+      <div class="card">
+        <span class="badge badge-orange">CC · Coord. Costos y Compras</span>
+        <h3 style="margin-top: 0.8rem;">Presupuesto y Proveedores</h3>
+        <p><strong>Objetivo:</strong> Controlar adquisiciones, costos y proveedores.</p>
+        <p style="margin-top: 0.5rem;"><strong>Formación:</strong> Ingeniería/Administración · <strong>Experiencia:</strong> 3 años</p>
+        <p style="margin-top: 0.5rem;"><strong>Funciones:</strong> Cotizar; comparar; comprar; controlar presupuesto; evaluar proveedores.</p>
+      </div>
+
+      <div class="card">
+        <span class="badge badge-green">SQ · SST y Ambiental</span>
+        <h3 style="margin-top: 0.8rem;">Prevención y Cumplimiento</h3>
+        <p><strong>Objetivo:</strong> Gestionar riesgos laborales y ambientales.</p>
+        <p style="margin-top: 0.5rem;"><strong>Formación:</strong> Profesional SST/Ambiental · <strong>Experiencia:</strong> 3 años</p>
+        <p style="margin-top: 0.5rem;"><strong>Funciones:</strong> Matriz de riesgos; permisos; inspecciones; capacitaciones; residuos; incidentes.</p>
+      </div>
+
+      <div class="card">
+        <span class="badge badge-green">CQ · Inspector de Calidad</span>
+        <h3 style="margin-top: 0.8rem;">Verificación y Trazabilidad</h3>
+        <p><strong>Objetivo:</strong> Verificar cumplimiento de especificaciones.</p>
+        <p style="margin-top: 0.5rem;"><strong>Formación:</strong> Ingeniería/Tecnología · <strong>Experiencia:</strong> 2 años</p>
+        <p style="margin-top: 0.5rem;"><strong>Funciones:</strong> ITP; recepción; inspección; NCR; liberaciones; dossier.</p>
+      </div>
+
+      <div class="card">
+        <span class="badge badge-orange">SM · Supervisor de Montaje</span>
+        <h3 style="margin-top: 0.8rem;">Coordinación de Campo</h3>
+        <p><strong>Objetivo:</strong> Coordinar personal técnico.</p>
+        <p style="margin-top: 0.5rem;"><strong>Formación:</strong> Tecnólogo/Técnico · <strong>Experiencia:</strong> 3 años</p>
+        <p style="margin-top: 0.5rem;"><strong>Funciones:</strong> Montaje; herramientas; personal; reportes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 19. CONTRATACIÓN -->
+  <section>
+    <div class="section-header">
+      <span class="badge badge-blue">19 · Contratación</span>
+      <h2>Modalidades de Contratación</h2>
+    </div>
+
+    <div class="table-responsive">
+      <table>
+        <thead><tr><th>Rol</th><th>Modalidad Sugerida</th><th>Duración</th><th>Producto</th></tr></thead>
+        <tbody>
+          <tr><td>Director del proyecto</td><td>Contrato laboral por duración del proyecto</td><td>Según cronograma</td><td>Gestión integral</td></tr>
+          <tr><td>Especialistas</td><td>Laboral por proyecto / prestación profesional</td><td>Fase de diseño</td><td>Memorias y planos</td></tr>
+          <tr><td>Residente</td><td>Laboral por proyecto</td><td>Fase de construcción</td><td>Ejecución y control</td></tr>
+          <tr><td>Fabricación</td><td>Contrato de suministro/fabricación</td><td>Según fabricación</td><td>Módulos fabricados</td></tr>
+          <tr><td>Montaje</td><td>Contrato de obra/servicio</td><td>Según instalación</td><td>Sistema instalado</td></tr>
+          <tr><td>Mantenimiento</td><td>Servicio especializado</td><td>Post-entrega</td><td>Mantenimiento y correctivos</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 style="color: var(--primary-cyan); margin: 2rem 0 1rem;">19.1 Contenido Mínimo Contractual</h4>
+    <div class="grid-cards">
+      <div class="card"><p>✓ Identificación de las partes</p></div>
+      <div class="card"><p>✓ Objeto</p></div>
+      <div class="card"><p>✓ Alcance y funciones</p></div>
+      <div class="card"><p>✓ Duración</p></div>
+      <div class="card"><p>✓ Lugar</p></div>
+      <div class="card"><p>✓ Remuneración</p></div>
+      <div class="card"><p>✓ Jornada cuando aplique</p></div>
+      <div class="card"><p>✓ SST</p></div>
+      <div class="card"><p>✓ Confidencialidad</p></div>
+      <div class="card"><p>✓ Propiedad de planos y documentación</p></div>
+      <div class="card"><p>✓ Causales de terminación</p></div>
+      <div class="card"><p>✓ Firmas y anexos</p></div>
+    </div>
+  </section>
+
+  <!-- 20. RIT DEL PROYECTO -->
+  <section>
+    <div class="section-header">
+      <span class="badge badge-blue">20 · Reglamento Interno</span>
+      <h2>Reglamento Interno de Trabajo del Proyecto</h2>
+      <p>Reglas operativas para el equipo del proyecto, armonizadas con el reglamento interno del empleador, contratos y legislación vigente.</p>
+    </div>
+
+    <div class="grid-cards">
+      <div class="card"><p><strong>1.</strong> Cumplir los planos, procedimientos, permisos y órdenes de trabajo vigentes.</p></div>
+      <div class="card"><p><strong>2.</strong> Utilizar los elementos de protección personal definidos para cada actividad.</p></div>
+      <div class="card"><p><strong>3.</strong> No intervenir equipos eléctricos o mecánicos sin autorización y competencia.</p></div>
+      <div class="card"><p><strong>4.</strong> Mantener zonas de circulación, evacuación y trabajo libres de obstáculos.</p></div>
+      <div class="card"><p><strong>5.</strong> Reportar inmediatamente condiciones inseguras, fallas y daños.</p></div>
+      <div class="card"><p><strong>6.</strong> Prohibir la operación de mecanismos automáticos durante mantenimiento sin aislamiento de energías.</p></div>
+      <div class="card"><p><strong>7.</strong> Respetar la señalización temporal del frente de obra.</p></div>
+      <div class="card"><p><strong>8.</strong> Controlar herramientas, equipos y materiales entregados.</p></div>
+      <div class="card"><p><strong>9.</strong> Conservar planos y documentos técnicos bajo control de versión.</p></div>
+      <div class="card"><p><strong>10.</strong> Mantener trato respetuoso y prevenir cualquier forma de acoso o violencia laboral.</p></div>
+    </div>
+
+    <div class="info-box warning mt-4">
+      <strong>20.1 Inducción:</strong> Ningún integrante deberá iniciar actividades de campo sin inducción al proyecto, riesgos del cargo, procedimientos aplicables y requisitos de SST.
+    </div>
+  </section>
+
+  <!-- 21. MATRIZ RACI -->
+  <section>
+    <div class="section-header">
+      <span class="badge badge-blue">21 · Matriz RACI</span>
+      <h2>Matriz de Responsabilidades</h2>
+    </div>
+
+    <div class="raci-legend">
+      <div class="raci-legend-item"><span class="raci-badge raci-R">R</span> Responsable de ejecutar</div>
+      <div class="raci-legend-item"><span class="raci-badge raci-A">A</span> Aprobador final</div>
+      <div class="raci-legend-item"><span class="raci-badge raci-C">C</span> Consultado</div>
+      <div class="raci-legend-item"><span class="raci-badge raci-I">I</span> Informado</div>
+    </div>
+
+    <div class="table-responsive">
+      <table>
+        <thead>
+          <tr>
+            <th>Proceso</th><th>DP</th><th>CI</th><th>RE</th><th>IM</th><th>IE</th><th>IA</th><th>CQ</th><th>CC</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>PG-01</strong></td><td><span class="raci-badge raci-A">A</span></td><td><span class="raci-badge raci-R">R</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-I">I</span></td><td><span class="raci-badge raci-I">I</span></td><td><span class="raci-badge raci-I">I</span></td><td><span class="raci-badge raci-I">I</span></td></tr>
+          <tr><td><strong>ES-01</strong></td><td><span class="raci-badge raci-A">A</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-R">R</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-I">I</span></td><td><span class="raci-badge raci-I">I</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-I">I</span></td></tr>
+          <tr><td><strong>DI-01</strong></td><td><span class="raci-badge raci-A">A</span></td><td><span class="raci-badge raci-R">R</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-I">I</span></td><td><span class="raci-badge raci-I">I</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-I">I</span></td></tr>
+          <tr><td><strong>DI-02</strong></td><td><span class="raci-badge raci-A">A</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-R">R</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-I">I</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-I">I</span></td><td><span class="raci-badge raci-I">I</span></td></tr>
+          <tr><td><strong>DI-03</strong></td><td><span class="raci-badge raci-A">A</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-R">R</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-I">I</span></td><td><span class="raci-badge raci-I">I</span></td></tr>
+          <tr><td><strong>DI-04</strong></td><td><span class="raci-badge raci-A">A</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-R">R</span></td><td><span class="raci-badge raci-I">I</span></td><td><span class="raci-badge raci-I">I</span></td></tr>
+          <tr><td><strong>AB-01</strong></td><td><span class="raci-badge raci-A">A</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-I">I</span></td><td><span class="raci-badge raci-I">I</span></td><td><span class="raci-badge raci-I">I</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-I">I</span></td><td><span class="raci-badge raci-R">R</span></td></tr>
+          <tr><td><strong>FA-01</strong></td><td><span class="raci-badge raci-A">A</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-R">R</span></td><td><span class="raci-badge raci-I">I</span></td><td><span class="raci-badge raci-I">I</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-C">C</span></td></tr>
+          <tr><td><strong>IN-02</strong></td><td><span class="raci-badge raci-A">A</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-R">R</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-I">I</span></td></tr>
+          <tr><td><strong>PU-01</strong></td><td><span class="raci-badge raci-A">A</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-R">R</span></td><td><span class="raci-badge raci-R">R</span></td><td><span class="raci-badge raci-C">C</span></td></tr>
+          <tr><td><strong>OM-01</strong></td><td><span class="raci-badge raci-A">A</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-R">R</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-C">C</span></td><td><span class="raci-badge raci-I">I</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 22. MANUAL DE RESPONSABILIDADES -->
+  <section>
+    <div class="section-header">
+      <span class="badge badge-blue">22 · Manual</span>
+      <h2>Manual de Responsabilidades</h2>
+    </div>
+
+    <div class="grid-cards">
+      <div class="card">
+        <h4 style="color: var(--primary-cyan);">Dirección del Proyecto</h4>
+        <ul class="list-check list-arrow" style="margin-top: 0.8rem;">
+          <li>Aprobar alcance, cronograma y presupuesto.</li>
+          <li>Dirigir comité de cambios.</li>
+          <li>Controlar riesgos y desempeño.</li>
+          <li>Autorizar entrega y cierre.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--primary-cyan);">Ingeniería</h4>
+        <ul class="list-check list-arrow" style="margin-top: 0.8rem;">
+          <li>Emitir diseños coordinados.</li>
+          <li>Verificar criterios de cálculo.</li>
+          <li>Resolver interferencias.</li>
+          <li>Liberar información para construcción.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--primary-cyan);">Construcción</h4>
+        <ul class="list-check list-arrow" style="margin-top: 0.8rem;">
+          <li>Ejecutar conforme a planos.</li>
+          <li>Controlar cantidades y rendimientos.</li>
+          <li>Coordinar subcontratistas.</li>
+          <li>Mantener trazabilidad de campo.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--primary-cyan);">Automatización</h4>
+        <ul class="list-check list-arrow" style="margin-top: 0.8rem;">
+          <li>Configurar sensores y control.</li>
+          <li>Verificar estados seguros.</li>
+          <li>Ejecutar pruebas funcionales.</li>
+          <li>Entregar respaldo de programación.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--primary-cyan);">Calidad</h4>
+        <ul class="list-check list-arrow" style="margin-top: 0.8rem;">
+          <li>Inspeccionar recepción y fabricación.</li>
+          <li>Controlar ITP y NCR.</li>
+          <li>Verificar pruebas.</li>
+          <li>Conformar dossier de calidad.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--primary-cyan);">SST y Ambiental</h4>
+        <ul class="list-check list-arrow" style="margin-top: 0.8rem;">
+          <li>Identificar peligros.</li>
+          <li>Controlar permisos.</li>
+          <li>Inspeccionar frentes.</li>
+          <li>Gestionar residuos e incidentes.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--primary-cyan);">Costos y Compras</h4>
+        <ul class="list-check list-arrow" style="margin-top: 0.8rem;">
+          <li>Controlar el presupuesto.</li>
+          <li>Solicitar cotizaciones.</li>
+          <li>Evaluar proveedores.</li>
+          <li>Controlar órdenes y entregas.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-text">&copy; 2026 Proyecto HIDROVÍA · NIVELIA S.A.S. · Bogotá D.C., Colombia</div>
+      <a href="https://nivelia.com" class="btn-corporate" target="_blank">Sitio Corporativo NIVELIA →</a>
+    </div>
+  </footer>
+  <script src="js/wbs-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
